@@ -1,0 +1,241 @@
+/* style.css */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+  margin: 0px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  color: white;
+  padding-bottom: 60px;
+  text-align: center;
+  position: relative;
+  margin : 0px;
+  padding: 5rem 0px 20px 0px;
+}
+
+/* Navbar */
+nav {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px 25px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.unhide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Hamburger menu */
+.bar {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bar div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* Nav links */
+nav ul {
+  list-style: none;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  margin: 10px;
+  display: none;
+}
+
+nav ul li {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 10px;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+/* Mode buttons */
+.mode {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.mode button {
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  background-color: #444;
+  color: white;
+  transition: 0.3s;
+}
+
+.mode button:hover {
+  background-color: #666;
+}
+
+/* Social media icons */
+.main-social {
+ margin-top: 0px;
+}
+
+.social-media i {
+  font-size: 34px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-media i:hover {
+  color: #ffd700;
+}
+
+/* Main hero text */
+.main-text {
+  margin-top: 40px;
+}
+
+.main-text h2 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.main-text h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.role {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ccc;
+}
+
+/* Profile image */
+header img {
+  margin-top: 30px;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+/* About section */
+.about {
+  background-color: white;
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.about h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #444;
+}
+
+.about p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mode {
+    justify-content: center;
+  }
+
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .main-text h1 {
+    font-size: 28px;
+  }
+}
+
+/* logic of navigation bar */
+
+.barline3{
+  display: none;
+}
+.barline2{
+  transform: rotate(45deg);
+  position: absolute;
+  right: 1px;
+  top: 1px;
+}
+.barline1{
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 1px;
+  top: 1px;
+}
+.main-bar{
+  gap: 0px;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+.main-ul{
+  display: block;
+}
+
+/* dark mode or light mode functionality */
+
