@@ -239,3 +239,14 @@ footer {
 
 /* dark mode or light mode functionality */
 
+.dark-about{
+  background-color: #670D2F;
+  color: #EF88AD;
+}
+.dark-body{
+  background-color: #3A0519;
+  color: #EF88AD;
+}
+.textColor{
+  color: #EF88AD;
+}
